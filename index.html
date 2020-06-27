@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <title>अयोध्या : कोरोना मामले</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">{{ site_title}}</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/OtherPages/about.html">साइट के बारे में 
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <marquee behavior="" direction="">{{marquee1}}</marquee>
+        <section>
+            <div class="container main-section-1">
+                <div class="header-image">
+
+                </div>
+
+
+                <div class="heading">
+                    {{data}} की रिपोर्ट
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="box">
+
+                            <center>
+                                <div class="text">
+                                    {{today_recvd_reports_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/recvd.png" alt=""> {{today_recvd_reports}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{today_positive_reports_text}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/plus.png" alt=""> {{today_positive_reports}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{today_negative_reports_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/negative.png" alt=""> {{today_negative_reports}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="box">
+
+                            <center>
+                                <div class="text">
+                                    {{today_recovered_reports_txt}}
+
+                                </div>
+                                <div class="digit">
+                                    <img src="images/fit.png" alt=""> {{today_recovered_reports}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{today_samples_taken_report_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/sample.png" alt=""> {{today_samples_taken_reports}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- <div class="box">
+                            <center>
+                                <div class="text">
+                                   -----
+                                </div>
+                                <div class="digit">
+
+                                </div>
+                            </center>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- ----------- 2-->
+                <div class="heading">
+                    <img src="images/all.png" alt=""> कुल मामले
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="box">
+
+                            <center>
+                                <div class="text">
+                                    {{total_positive_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/plus.png" alt=""> {{total_positive}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{total_active_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/bed.png" alt=""> {{total_active}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{total_recovered_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/allfit.png" alt=""> {{total_recovered}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{total_deaths_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/death.png" alt=""> {{total_deaths}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -----------3 -->
+                <div class="heading">
+                    <img src="images/reports.png" alt=""> कुल सैंपल रिपोर्ट
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="box">
+
+                            <center>
+                                <div class="text">
+                                    {{total_sent_samples_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/allsample.png" alt=""> <img src="images/sent.png" alt="">
+                                    {{total_sent_samples}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{ total_recvd_sample_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/allsample.png" alt=""> <img src="images/recvd.png" alt="">
+                                    {{ total_recvd_sample}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="box">
+                            <center>
+                                <div class="text">
+                                    {{total_not_rcvd_samples_txt}}
+                                </div>
+                                <div class="digit">
+                                    <img src="images/allsample.png" alt=""> <img src="images/waiting.png" alt="">
+                                    {{total_not_rcvd_samples}}
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <hr>
+                <center>
+                    <div class="heading">
+                        संस्थागत क्वारंटीन चिकित्सालय<img src="images/hospital.png" alt="">
+                    </div>
+                </center>
+                <div class="row">
+                    <div class="col-sm-4 hospitals">
+                        <center>
+                            <div class="hospital_text">
+                                न्यू ब्लॉक मसौधा
+                            </div>
+                            <div class="hospital_digit">
+                                <p> कुल बेड की संख्या : <strong>{{ masodha_total_beds}}</strong> </p>
+                                <p>कुल भर्ती मरीज़ों की संख्या: <strong>{{ masodha_used_beds}}</strong></p>
+                                <p>कुल खाली बेडों की संख्या: <strong>{{ masodha_free_beds}}</strong></p>
+
+
+
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-sm-4 hospitals">
+                        <center>
+                            <div class="hospital_text">
+
+                                राजर्षि दसरथ मेडिकल कालेज अयोध्या
+
+                            </div>
+                            <div class="hospital_digit">
+
+                                <p> कुल बेड की संख्या : <strong>{{  dashrath_total_beds}}</strong> </p>
+                                <p>कुल भर्ती मरीज़ों की संख्या: <strong>{{  dashrath_used_beds}}</strong></p>
+                                <p>कुल खाली बेडों की संख्या: <strong>{{ dashrath_free_beds}}</strong></p>
+
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-sm-4 hospitals">
+                        <center>
+                            <div class="hospital_text">
+
+                                सरयू एंड लव कुश छात्रावास
+
+                            </div>
+                            <div class="hospital_digit">
+                                <p> कुल बेड की संख्या : <strong>{{luvkush_total_beds}}</strong> </p>
+                                <p>कुल भर्ती मरीज़ों की संख्या: <strong>{{ luvkush_used_beds}}</strong></p>
+                                <p>कुल खाली बेडों की संख्या: <strong>{{ luvkush_free_beds}}</strong></p>
+
+
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <center>
+                    <div class="heading">
+                        L 1 , L 2 एवं कोविड केयर चिकित्सालय <img src="images/hospital.png" alt="">
+                </center>
+         
+            <div class="row">
+
+                <div class="col-sm-3 hospitals">
+                    <center>
+                        <div class="hospital_text">
+
+                            L 1 चिकित्सालय सामुदायिक स्वास्थ केंद्र मसौधा
+
+                        </div>
+                        <div class="hospital_digit">
+                            <p> कुल बेड की संख्या : <strong>{{  L1masodha_toatal_beds}}</strong> </p>
+                            <p>कुल भर्ती मरीज़ों की संख्या: <strong>{{  L1masodha_used_beds}}</strong></p>
+                            <p>कुल खाली बेडों की संख्या :<strong>{{  L1masodha_free_beds}}</strong></p>
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-3 hospitals">
+                    <center>
+                        <div class="hospital_text">
+                            L 1 समकक्ष कोविड केयर चिकित्सालय झुनझुन वाला कॉलेज
+                        </div>
+                        <div class="hospital_digit">
+                            <p> कुल बेड की संख्या : <strong>{{ L1jhun_toatal_beds}}</strong> </p>
+                            <p>कुल भर्ती मरीज़ों की संख्या :<strong>{{ L1jhun_used_beds}}</strong></p>
+                            <p>कुल खाली बेडों की संख्या: <strong>{{L1jhun_free_beds}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-3 hospitals">
+                    <center>
+                        <div class="hospital_text">
+
+                            L 2 चिकित्सालय राजर्षि दशरथ मेडिकल कॉलेज
+                        </div>
+                        <div class="hospital_digit">
+                            <p> कुल बेड की संख्या : <strong>{{ L1dashrath_toatal_beds}}</strong> </p>
+                            <p>कुल भर्ती मरीज़ों की संख्या :<strong>{{ L1dashrath_used_beds}}</strong></p>
+                            <p>कुल खाली बेडों की संख्या :<strong>{{ L1dashrath_free_beds}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-3 hospitals">
+                    <center>
+                        <div class="hospital_text">
+
+                            L 1 समकक्ष कोविड केयर चिकित्सालय  कुमारगंज
+                        </div>
+                        <div class="hospital_digit">
+                            <p> कुल बेड की संख्या : <strong>{{ L1kumarganj_toatal_beds}}</strong> </p>
+                            <p>कुल भर्ती मरीज़ों की संख्या: <strong>{{ L1kumarganj_used_beds}}</strong></p>
+                            <p>कुल खाली बेडों की संख्या :<strong>{{ L1kumarganj_free_beds}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <hr>
+            <hr>
+
+            <center>
+                <div class="heading">
+                    कलस्टर एवं कन्टेंटमेंट<img src="images/alert.png" alt="" srcset="">  जोन
+                </div>
+            </center>
+            <div class="row">
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+                            कुल संख्या
+                        </div>
+                        <div class="tahseel_digit">
+                            <p> <img src="images/cluster.png" alt="" srcset="">कलस्टर : <strong>{{ total_clusters}}</strong> </p>
+                            <p><img src="images/emergency.png" alt="" srcset="">कन्टेंटमेंट जोन  : <strong>{{ total_zones}}</strong></p>
+
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+
+                            सदर तहसील
+
+                        </div>
+                        <div class="tahseel_digit">
+
+                            <p><img src="images/cluster.png" alt="" srcset=""> कलस्टर : <strong>{{ sadar_clusters}}</strong> </p>
+                            <p><img src="images/emergency.png" alt="" srcset="">कन्टेंटमेंट जोन  : <strong>{{ sadar_zones}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+
+                            मिल्कीपुर
+
+                        </div>
+                        <div class="tahseel_digit">
+                            <p> <img src="images/cluster.png" alt="" srcset="">कलस्टर : <strong>{{ milkipur_clusters}}</strong> </p>
+                            <p><img src="images/emergency.png" alt="" srcset="">कन्टेंटमेंट जोन  : <strong>{{ milkipur_zones}}</strong></p>
+
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+
+                            बीकापुर
+
+                        </div>
+                        <div class="tahseel_digit">
+                            <p><img src="images/cluster.png" alt="" srcset=""> कलस्टर : <strong>{{ bikapur_clusters}}</strong> </p>
+                            <p><img src="images/emergency.png" alt="" srcset="" > कन्टेंटमेंट जोन: <strong>{{ bikapur_zones}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+                            सोहावल
+                        </div>
+                        <div class="tahseel_digit">
+                            <p> <img src="images/cluster.png" alt="" srcset="">कलस्टर : <strong>{{ sohawal_clusters}}</strong> </p>
+                            <p><img src="images/emergency.png" alt="" srcset="">कन्टेंटमेंट जोन  : <strong>{{ sohawal_zones}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+                <div class="col-sm-4 clusters">
+                    <center>
+                        <div class="tahseel_text">
+
+                            रुदौली
+                        </div>
+                        <div class="tahseel_digit">
+                            <p><img src="images/cluster.png" alt="" srcset=""> कलस्टर : <strong>{{ rudauli_clusters}}</strong> </p>
+                            <p> <img src="images/emergency.png" alt="" srcset="">कन्टेंटमेंट जोन : <strong>{{ rudauli_zones}}</strong></p>
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+
+    </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

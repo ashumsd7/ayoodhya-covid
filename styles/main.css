@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    background: rgb(248, 247, 245);
+    font-family: 'Noto Serif', serif;
+}
+.header-image{
+    /* height: 120px;
+    border: 1px solid red;
+    margin-top:20px;
+    background: url('../images/banner.JPG');
+    background-size: cover; */
+}
+.heading{
+    border-bottom: 3px solid rgb(222, 236, 203);
+   border-width: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-shadow: 1px 2px rgba(0,0,0,.1);
+    margin-top: 40px;
+   
+}
+.heading:hover{
+    border-bottom: 3px solid rgb(7, 231, 93);
+    transition: .5s ease-in-out;
+    border-width: 10px;
+    cursor: pointer;
+}
+.box{
+    /* border: 1px solid red; */
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 12px gray;
+    background: white;
+    
+}
+.box:hover{
+    /* border: 1px solid red; */
+
+    box-shadow: 2px 4px 8px rgb(113, 238, 169);
+    background: rgb(235, 230, 230);
+    cursor: pointer;
+
+}
+.text{
+    font-size: 18px;
+    font-weight: 500;
+    border: .5ps solid gray;
+    
+   
+}
+/* .text:hover{
+    font-weight: 600;
+} */
+.digit{
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px rgba(0,0,0,0.4);
+}
+.digit:hover{
+    font-weight: 800;
+}
+.hospitals{
+   
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgb(63, 60, 60);
+  
+}
+.hospitals:hover{
+    background: rgb(135, 241, 179);
+    cursor: pointer;
+}
+.hospital_text
+{
+    font-size: 20px;
+    font-weight: 600;
+    border: .5ps solid gray;
+    border-bottom: 1px solid rgb(20, 24, 10);
+}
+.hospital_digit strong{
+    color:  rgb(8, 17, 143);
+}
+
+.clusters{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px gray;
+    padding: 5px;
+    
+}
+.clusters:hover{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px gray;
+    padding: 5px;
+    background: rgb(236, 152, 152);
+    cursor: pointer;
+    transition: .5s ease-in;
+    
+}
+.tahseel_text
+{
+    font-size: 24px;
+    font-weight: 800;
+    border: .5ps solid gray;
+    border-bottom: 1px solid rgb(20, 24, 10);
+}
+.tahseel_digit
+{
+    font-size: 20px;
+    text-shadow: 0px 1px rgba(0,0,0,0.4);
+}
+strong{
+        color: red;
+        font-size: 25px;
+
+}
