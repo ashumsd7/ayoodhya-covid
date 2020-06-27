@@ -68,20 +68,20 @@ new Vue({
            dashrath_free_beds:'40',
 
            luvkush_total_beds:'300',
-           luvkush_used_beds:'183',
-           luvkush_free_beds:'117',
+           luvkush_used_beds:'163',
+           luvkush_free_beds:'137',
 
            L1masodha_toatal_beds:'32',
            L1masodha_used_beds:'0',
            L1masodha_free_beds:'32',
 
            L1jhun_toatal_beds:'80',
-           L1jhun_used_beds:'47',
-           L1jhun_free_beds:'33',
+           L1jhun_used_beds:'45',
+           L1jhun_free_beds:'35',
 
            L1dashrath_toatal_beds:'200',
-           L1dashrath_used_beds:'39',
-           L1dashrath_free_beds:'161',
+           L1dashrath_used_beds:'42',
+           L1dashrath_free_beds:'158',
 
            L1kumarganj_toatal_beds:'200',
            L1kumarganj_used_beds:'0',
