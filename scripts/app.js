@@ -64,8 +64,8 @@ new Vue({
            masodha_free_beds:'54',
 
            dashrath_total_beds:'50',
-           dashrath_used_beds:'12',
-           dashrath_free_beds:'38',
+           dashrath_used_beds:'10',
+           dashrath_free_beds:'40',
 
            luvkush_total_beds:'300',
            luvkush_used_beds:'183',
