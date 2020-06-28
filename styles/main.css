@@ -41,7 +41,7 @@
     /* border: 1px solid red; */
 
     box-shadow: 2px 4px 8px rgb(113, 238, 169);
-    background: rgb(235, 230, 230);
+    background: rgb(255, 255, 255);
     cursor: pointer;
 
 }
@@ -64,8 +64,8 @@
     font-weight: 800;
 }
 .hospitals{
-   
-    padding: 5px;
+    margin: 5px;
+     padding: 5px;
     background: white;
     border-radius: 10px;
     box-shadow: 2px 4px 8px rgb(63, 60, 60);
@@ -91,6 +91,7 @@
     border-radius: 10px;
     box-shadow: 2px 4px 8px gray;
     padding: 5px;
+    margin: 5px;
     
 }
 .clusters:hover{
