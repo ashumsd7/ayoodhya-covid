@@ -3,7 +3,7 @@ new Vue({
     data() {
         return {
             data:'27 जून 2020',
-            site_title: "अयोध्या",
+            site_title: "अयोध्या कोरोना अपडेट्स ",
             today_recvd_reports_txt:' प्राप्त रिपोर्ट',
             today_recvd_reports:'536',
             
