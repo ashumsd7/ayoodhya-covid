@@ -32,10 +32,10 @@ new Vue({
             total_deaths:'4',
 
             total_sent_samples_txt:'कुल भेजे गए सैंपल रिपोर्ट्स',
-            total_sent_samples:'8091',
+            total_sent_samples:'9091',
 
             total_recvd_sample_txt:'कुल प्राप्त सैंपल रिपोर्ट्स',
-            total_recvd_sample:'8361',
+            total_recvd_sample:'8368',
 
             total_not_rcvd_samples_txt:'कुल अप्राप्त सैंपल रिपोर्ट्स',
             total_not_rcvd_samples:'723',
