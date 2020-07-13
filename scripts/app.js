@@ -1,8 +1,8 @@
-new Vue({
+﻿new Vue({
     el:"#app",
     data() {
         return {
-            data:'12 जुलाई 2020',
+            data:'13 जुलाई 2020',
             site_title: "अयोध्या कोरोना अपडेट्स ",
             today_recvd_reports_txt:' प्राप्त रिपोर्ट',
             today_recvd_reports:'392',
