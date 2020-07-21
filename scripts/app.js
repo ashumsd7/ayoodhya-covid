@@ -2,90 +2,90 @@
     el:"#app",
     data() {
         return {
-            data:'14 जुलाई 2020',
+            data:'21 जुलाई 2020',
             site_title: "अयोध्या कोरोना अपडेट्स ",
             today_recvd_reports_txt:' प्राप्त रिपोर्ट',
-            today_recvd_reports:'457',
+            today_recvd_reports:'559',
             
             today_positive_reports_text:' पॉजिटिव केस',
-            today_positive_reports:'33',
+            today_positive_reports:'8',
 
             today_negative_reports_txt:' नेगेटिव केस',
-            today_negative_reports:'424',
+            today_negative_reports:'551',
 
             today_recovered_reports_txt:' ठीक हुए',
-            today_recovered_reports:'4',
+            today_recovered_reports:'31',
 
             today_samples_taken_report_txt:' लिए गए सैंपल',
-            today_samples_taken_reports:'608',
+            today_samples_taken_reports:'576',
 
             total_positive_txt:'कुल पॉजिटिव मामले',
-            total_positive:'493',
+            total_positive:'658',
 
             total_active_txt:'कुल सक्रीय',
-            total_active:'181',
+            total_active:'220',
 
             total_recovered_txt:'कुल ठीक',
-            total_recovered:'306',
+            total_recovered:'430',
 
             total_deaths_txt:'कुल मृतक',
-            total_deaths:'6',
+            total_deaths:'8',
 
             total_sent_samples_txt:'कुल भेजे गए सैंपल रिपोर्ट्स',
-            total_sent_samples:'17947',
+            total_sent_samples:'22090',
 
             total_recvd_sample_txt:'कुल प्राप्त सैंपल रिपोर्ट्स',
-            total_recvd_sample:'16483',
+            total_recvd_sample:'19968',
 
             total_not_rcvd_samples_txt:'कुल अप्राप्त सैंपल रिपोर्ट्स',
-            total_not_rcvd_samples:'1464',
+            total_not_rcvd_samples:'2122',
 
-            total_clusters:'48',
-            total_zones:'119',
+            total_clusters:'69',
+            total_zones:'171',
 
-            sadar_clusters:'16',
-            sadar_zones:'57',
+            sadar_clusters:'31',
+            sadar_zones:'96',
 
-            milkipur_clusters:'12',
-            milkipur_zones:'16',
+            milkipur_clusters:'11',
+            milkipur_zones:'19',
 
-            bikapur_clusters:'7',
-            bikapur_zones:'14',
+            bikapur_clusters:'10',
+            bikapur_zones:'17',
 
-            sohawal_clusters:'9',
-            sohawal_zones:'18',
+            sohawal_clusters:'10',
+            sohawal_zones:'26',
 
-            rudauli_clusters:'4',
-           rudauli_zones:'14',
+            rudauli_clusters:'7',
+           rudauli_zones:'13',
 
 
            masodha_total_beds:'54',
-           masodha_used_beds:'0',
-           masodha_free_beds:'54',
+           masodha_used_beds:'41',
+           masodha_free_beds:'13',
 
            dashrath_total_beds:'50',
-           dashrath_used_beds:'36',
-           dashrath_free_beds:'14',
+           dashrath_used_beds:'48',
+           dashrath_free_beds:'4',
 
            luvkush_total_beds:'300',
-           luvkush_used_beds:'105',
-           luvkush_free_beds:'195',
+           luvkush_used_beds:'143',
+           luvkush_free_beds:'157',
 
            L1masodha_toatal_beds:'32',
            L1masodha_used_beds:'0',
            L1masodha_free_beds:'32',
 
            L1jhun_toatal_beds:'80',
-           L1jhun_used_beds:'56',
-           L1jhun_free_beds:'24',
+           L1jhun_used_beds:'55',
+           L1jhun_free_beds:'25',
 
            L1dashrath_toatal_beds:'200',
-           L1dashrath_used_beds:'108',
-           L1dashrath_free_beds:'92',
+           L1dashrath_used_beds:'119',
+           L1dashrath_free_beds:'81',
 
            L1kumarganj_toatal_beds:'200',
-           L1kumarganj_used_beds:'0',
-           L1kumarganj_free_beds:'0',
+           L1kumarganj_used_beds:'16',
+           L1kumarganj_free_beds:'184',
 
             marquee1:'रोज़  का डेटा  डेली  रिपोर्ट आने के बाद अपडेट किया जाता है   |  ',
 
