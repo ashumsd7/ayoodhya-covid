@@ -29,7 +29,7 @@
             total_recovered:'685',
 
             total_deaths_txt:'कुल मृतक',
-            total_deaths:'43',
+            total_deaths:'16',
 
             total_sent_samples_txt:'कुल भेजे गए सैंपल रिपोर्ट्स',
             total_sent_samples:'34395',
