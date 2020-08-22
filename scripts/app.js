@@ -2,43 +2,43 @@
     el:"#app",
     data() {
         return {
-            data:'18 August 2020',
+            data:'22 August 2020',
             site_title: "अयोध्या कोरोना अपडेट्स ",
             today_recvd_reports_txt:' प्राप्त रिपोर्ट',
-            today_recvd_reports:'985',
+            today_recvd_reports:'1539',
             
             today_positive_reports_text:' पॉजिटिव केस',
-            today_positive_reports:'52',
+            today_positive_reports:'100',
 
             today_negative_reports_txt:' नेगेटिव केस',
-            today_negative_reports:'933',
+            today_negative_reports:'1439',
 
             today_recovered_reports_txt:' ठीक हुए',
-            today_recovered_reports:'26',
+            today_recovered_reports:'96',
 
             today_samples_taken_report_txt:' लिए गए सैंपल',
-            today_samples_taken_reports:'937',
+            today_samples_taken_reports:'1666',
 
             total_positive_txt:'कुल पॉजिटिव मामले',
-            total_positive:'2042',
+            total_positive:'2343',
 
             total_active_txt:'कुल सक्रीय',
-            total_active:'573',
+            total_active:'630',
 
             total_recovered_txt:'कुल ठीक',
-            total_recovered:'1434',
+            total_recovered:'1677',
 
             total_deaths_txt:'कुल मृतक',
-            total_deaths:'35',
+            total_deaths:'36',
 
             total_sent_samples_txt:'कुल भेजे गए सैंपल रिपोर्ट्स',
-            total_sent_samples:'49771',
+            total_sent_samples:'54742',
 
             total_recvd_sample_txt:'कुल प्राप्त सैंपल रिपोर्ट्स',
-            total_recvd_sample:'47720',
+            total_recvd_sample:'51047',
 
             total_not_rcvd_samples_txt:'कुल अप्राप्त सैंपल रिपोर्ट्स',
-            total_not_rcvd_samples:'2051',
+            total_not_rcvd_samples:'3695',
 
             total_clusters:'69',
             total_zones:'171',
